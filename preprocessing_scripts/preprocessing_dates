@@ -1,0 +1,10 @@
+Run the preprocessing script (not the fire only one) with the dates below to get the data used
+
+Period start is included while period end is excluded as per Google Earth Engine API
+
+period_start = '2016-03-15'
+period_end = '2016-03-32'
+
+period_start = '2018-01-15'
+period_end = '2018-01-32'
+

@@ -1,0 +1,18 @@
+Run the preprocessing script (not the fire only one) with the dates below to get the data used in the evaluation set
+
+Period start is included while period end is excluded as per Google Earth Engine API
+
+NOTE: run the script with each pair of start and end date with a different save folder location.
+
+period_start = '2019-08-01'
+period_end = '2019-08-28'
+
+period_start = '2019-07-01'
+period_end = '2019-07-28'
+
+period_start = '2019-06-01'
+period_end = '2019-06-28'
+
+period_start = '2019-05-01'
+period_end = '2019-05-28'
+

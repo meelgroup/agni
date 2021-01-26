@@ -1,0 +1,44 @@
+Run the fire_only script with these dates to get all the fire data used
+
+Period start is included while period end is excluded as per Google Earth Engine API
+
+period_start = '2014-09-01'
+period_end = '2014-09-28'
+
+period_start = '2014-10-01'
+period_end = '2014-10-30'
+
+period_start = '2014-11-01'
+period_end = '2014-11-30'
+
+period_start = '2014-12-01'
+period_end = '2014-12-30'
+
+period_start = '2015-01-01'
+period_end = '2015-01-30'
+
+period_start = '2015-02-01'
+period_end = '2015-02-26'
+
+period_start = '2015-09-01'
+period_end = '2015-09-30'
+
+period_start = '2015-10-01'
+period_end = '2015-10-30'
+
+period_start = '2016-08-01'
+period_end = '2016-08-30'
+
+period_start = '2016-09-01'
+period_end = '2016-09-30'
+
+period_start = '2016-10-01'
+period_end = '2016-10-30'
+
+period_start = '2017-06-01'
+period_end = '2017-06-31'
+
+period_start = '2017-07-01'
+period_end = '2017-07-32'
+
+
