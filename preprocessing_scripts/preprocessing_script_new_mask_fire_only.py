@@ -27,13 +27,15 @@ import matplotlib.pyplot as plt
 # set location to save preprocessed files
 save_folder_location = './preprocessed_data/'
 # set the location of the mask resource on google earth engine - this is account dependent
-mask_feature_collection_path = 'PLACE GOOGLE EARTH ENGINE INDONESIA MASK ASSET ID HERE'
+
 # period start and period end is for reference image (time t)
 # get 1 year historical satellite image (t - 52 weeks to t)
 # hotspot labels for 5th week into future is retrieved (t + 4weeks to t + 5 weeks)
 period_start = '2019-08-01'
 period_end = '2019-08-28'
 ##############################################
+
+mask_feature_collection_path = 'USDOS/LSIB_SIMPLE/2017'
 
 
 # if folder does not exist, create it
@@ -246,7 +248,9 @@ def convert_to_histogram(stacked_array, file_name, image_slice_length):
 
 
 
-indonesia_mask = ee.FeatureCollection(mask_feature_collection_path).filter(ee.Filter.eq("Name", 'Indonesia'))
+# indonesia_mask = ee.FeatureCollection(mask_feature_collection_path).filter(ee.Filter.eq("Name", 'Indonesia'))
+# using new source of country boundary
+indonesia_mask = ee.FeatureCollection(mask_feature_collection_path).filter(ee.Filter.eq('country_na', 'Indonesia'))
 
 
 # for time period, get all landsat images within those bounds
